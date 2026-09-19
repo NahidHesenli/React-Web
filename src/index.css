@@ -1,1 +1,42 @@
 @import "tailwindcss";
+
+@import "tailwindcss";
+
+@keyframes moveBall1 {
+  0%, 100% { transform: translate(0, 0); }
+  33% { transform: translate(0, 180px); }
+  66% { transform: translate(-180px, 180px); }
+}
+
+@keyframes moveBall2 {
+  0%, 100% { transform: translate(0, 0); }
+  33% { transform: translate(180px, 0); }
+  66% { transform: translate(180px, 180px); }
+}
+
+@keyframes moveBall3 {
+  0%, 100% { transform: translate(0, 0); }
+  33% { transform: translate(0, -180px); }
+  66% { transform: translate(180px, -180px); }
+}
+@keyframes moveBall4 {
+  0%, 100% { transform: translate(0, 0); }
+  33% { transform: translate(-180px, 0); }
+  66% { transform: translate(-180px, -180px); }
+}
+
+.ball1 {
+  animation: moveBall1 2s ease-in-out infinite;
+}
+
+.ball2 {
+  animation: moveBall2 2s ease-in-out infinite;
+}
+
+.ball3 {
+  animation: moveBall3 2s ease-in-out infinite;
+}
+
+.ball4 {
+  animation: moveBall4 2s ease-in-out infinite;
+}
